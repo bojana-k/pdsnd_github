@@ -322,13 +322,11 @@ def trip_duration_stats(df):
 
     # Find total travel time
     total_time = df['Trip Duration'].sum()
-    print('\nTotal travel time for the chosen city and period was {} seconds \
-({} hours).'.format(total_time, total_time/3600))
+    print('\nTotal travel time for the chosen city and period was {} hours.'.format(total_time/3600))
 
     # Find average travel time
     mean_time = df['Trip Duration'].mean()
-    print ('\nThe average duration of the trip was {} seconds ({} hours).\n'.\
-format(mean_time, mean_time/3600))
+    print ('\nThe average duration of the trip was {} hours.\n'.format(mean_time/3600))
 
 
     # Calculate process duration
