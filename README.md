@@ -1,15 +1,26 @@
 ### Date created
-Include the date you created this project and README file.
+February 11 2021
+
+
 
 ### Project Title
-Replace the Project Title
+Explore US Bikeshare Data
+
+
 
 ### Description
-Describe what your project is about and what it does
+The project investigates database of bike sharing system in three US cities: Chicago, New York City and Washington. The program interacts with the user to get the user's input about the information the user is interested in and outputs simple descriptive statistics about the bike sharing system based on the user's input.
+
+
 
 ### Files used
-Include the files used
+chicago.csv
+new_york_city.csv
+washington.csv
+
+
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+The template code used in the project was downloaded from Udacity:
 
+[Udacity] https://www.udacity.com/
