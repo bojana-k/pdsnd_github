@@ -293,18 +293,18 @@ def station_stats(df):
     start_time = time.time()
 
     # Find the most popular start station
-    pop_start_stn = df['Start Station'].mode()[0]
-    print('\nThe most popular start station was {}.'.format(pop_start_stn))
+    popular_start_station = df['Start Station'].mode()[0]
+    print('\nThe most popular start station was {}.'.format(popular_start_station))
 
     # Find the most popular end station
-    pop_end_stn = df['End Station'].mode()[0]
-    print('\nThe most popular end station was {}.'.format(pop_end_stn))
+    popular_end_station = df['End Station'].mode()[0]
+    print('\nThe most popular end station was {}.'.format(popular_end_station))
 
     # Make a new column 'Trip' by combining start and end station
     df['Trip'] = df['Start Station'] + ' - ' + df['End Station']
     #Find the most popular trip
-    pop_trip = df['Trip'].mode()[0]
-    print('\nThe most popular trip was {}.\n'.format(pop_trip))
+    popular_trip = df['Trip'].mode()[0]
+    print('\nThe most popular trip was {}.\n'.format(popular_trip))
 
 
     # Calculate process duration
@@ -323,13 +323,11 @@ def trip_duration_stats(df):
 
     # Find total travel time
     total_time = df['Trip Duration'].sum()
-    print('\nTotal travel time for the chosen city and period was {} seconds \
-({} hours).'.format(total_time, total_time/3600))
+    print('\nTotal travel time for the chosen city and period was {} hours.'.format(total_time/3600))
 
     # Find average travel time
     mean_time = df['Trip Duration'].mean()
-    print ('\nThe average duration of the trip was {} seconds ({} hours).\n'.\
-format(mean_time, mean_time/3600))
+    print ('\nThe average duration of the trip was {} hours.\n'.format(mean_time/3600))
 
 
     # Calculate process duration
